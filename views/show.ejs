@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= recipes.name %></title>
+</head>
+<body>
+	<h1>welcome to the recipe for <%= recipes.name %></h1>
+	<form class="d-inline" action="/recipes/<%= recipes._id %>?_method=DELETE" method='POST'>
+		<button class="card-link btn btn-warning">Delete</button>
+	</form>
+
+</body>
+</html>

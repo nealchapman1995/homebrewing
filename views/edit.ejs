@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>edit <%= recipe.name %></title>
+</head>
+<body>
+<div class="row">
+	<h1 class="text-center">Edit Recipe</h1>
+	<div class="col-6 offset-3">
+		<form action="/recipes/<%= recipe._id %>?_method=PUT" method="POST" novalidate class="validated-form">
+			<div class="mb-3">
+				<label class="form-label" for='title'>Name</label>
+				<input class='form-control' type="text" id='title' name="recipe[name]" value="<%=recipe.name%>" required>
+			</div>
+			<div class="mb-3">
+				<label class="form-label" for='location'>Style</label>
+				<input class="form-control" type="text" id='location' name="recipe[style]" value="<%= recipe.style %>" required>
+			</div>
+			<div class="mb-3">
+				<label class="form-label" for='image'>Image URL</label>
+				<input class="form-control" type="text" id='image' name="recipe[image]" value="<%= recipe.image %>" required>
+			</div>
+			<div class="mb-3">
+				<label class="form-label" for='price'>ABV</label>
+				<div class="input-group">
+	  				<span class="input-group-text" id="price-label">%</span>
+	  				<input type="text" class="form-control" id="price" placeholder="0.00" aria-label="price" aria-describedby="price-label" name="recipe[ABV]" value="<%= recipe.ABV %>" required>
+				</div>
+			</div>
+			<div class="mb-3">
+				<label class="form-label" for='description'>Recipe</label>
+				<textarea class="form-control" type="text" id='description' name="recipe[recipe]" required><%= recipe.recipe %></textarea>
+			</div>
+			<div class="mb-3">
+				<label class="form-label" for='description'>Notes</label>
+				<textarea class="form-control" type="text" id='description' name="recipe[review]" required><%= recipe.review %></textarea>
+			</div>
+			<div class="mb-3">
+				<button class="btn btn-info">Update Recipe</button>
+			</div>
+		</form>
+	</div>
+</div>
+
+</body>
+</html>

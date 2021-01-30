@@ -10,4 +10,4 @@ const receipeSchema = new Schema({
 	review: String
 });
 
-module.exports = mongoose.model('review', receipeSchema);
+module.exports = mongoose.model('Recipe', receipeSchema);

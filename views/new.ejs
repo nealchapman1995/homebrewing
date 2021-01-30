@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New Receipe</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+
+	<div class="row">
+	<h1 class="text-center">New Receipe</h1>
+	<div class="col-6 offset-3">
+		<form action="/new" method="POST" novalidate class="validated-form">
+			<div class="mb-3">
+				<label class="form-label" for='name'>Name</label>
+				<input class='form-control' type="text" id='name' name="recipe[name]" required>
+			</div>
+
+			<div class="mb-3">
+				<label class="form-label" for='style'>style</label>
+				<input class="form-control" type="text" id='style' name="recipe[style]" required>
+			</div>
+			<div class="mb-3">
+				<label class="form-label" for='image'>Image URL</label>
+				<input class="form-control" type="text" id='image' name="receipe[image]" required>
+			</div>
+			<div class="mb-3">
+				<label class="form-label" for='ABV'>ABV</label>
+				<div class="input-group">
+	  				<span class="input-group-text" id="price-label">%</span>
+	  				<input type="text" class="form-control" id="price" placeholder="0.00" aria-label="price" aria-describedby="price-label" name="receipe[price]" required>
+				</div>
+			</div>
+			<div class="mb-3">
+				<label class="form-label" for='receipe'>Recipe</label>
+				<textarea class="form-control" type="text" id='receipe' name="recipe[receipe]" required></textarea>
+			</div>
+			<div class="mb-3">
+				<label class="form-label" for='notes'>Notes</label>
+				<textarea class="form-control" type="text" id='notes' name="receipe[notes]" required></textarea>
+			</div>
+			<div class="mb-3">
+				<button class="btn btn-primary">Add Recipe</button>
+			</div>
+		</form>
+
+		<h5><a href="/campgrounds">Back Home</a></h5>
+	</div>
+</div>
+
+</body>
+</html>
