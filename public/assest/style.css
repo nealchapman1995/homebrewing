@@ -46,7 +46,7 @@ body{
 	justify-content: space-between;
 	margin-left: 75px;
 	margin-right: 75px;
-	background-color: #b0b0b0;
+	background-color: #b0b0b0
 	margin-bottom: 100px;
 }
 
@@ -57,7 +57,7 @@ body{
 	margin: 60px 100px;
 	border-radius: 10px;
 	background-color: #b0b0b0;
-	border: 1px solid white;
+	border: none;
 }
 
 #body{
@@ -79,3 +79,38 @@ body{
 	margin: 50px 45%;
 	width: 10%;
 }
+
+#show-header{
+	text-align: center;
+	background-color: black;
+}
+
+#show-header h2{
+	font-size: 50px;
+	color: white;
+	padding-top: 20px;
+}
+
+#show-header h5{
+	font-size: 30px;
+	color: white;
+	padding-bottom: 40px;
+	padding-top: 20px;
+}
+
+#ABV{
+	font-size: 20px;
+	color: grey;
+}
+
+#recipe-recipe{
+	text-align: center;
+	margin: 50px 100px;
+}
+
+#recipe-review{
+	text-align: center;
+	margin: 50px 100px;
+}
+
+

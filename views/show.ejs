@@ -18,6 +18,22 @@
   </li>
 </ul>
 
+<div id="show-header">
+	<h2><%= recipes.name %></h2>
+	<h5><%= recipes.style %> <span id="ABV"> <%= recipes.ABV %>% ABV</span></h5>
+</div>
+
+<div class="row">
+	<div class="col" id="recipe-recipe">
+		<h5>Recipe</h5>
+		<p><%= recipes.recipe %></p>
+	</div>
+	<div class="col" id="recipe-review">
+		<h5>Review</h5>
+		<p><%= recipes.review%></p>
+	</div>
+</div>
+
 <div class="row">
 	<div class="col-6 offset-3">
 		<div class="card mb-3">
