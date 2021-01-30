@@ -16,9 +16,11 @@ const seedDB = async () => {
     await recipe.deleteMany({});
     for (let i = 0; i < 10; i++) {
         const recipes = new recipe({
-            name: 'lager',
-            imgage: 'https://images.unsplash.com/photo-1600788886242-5c96aabe3757?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
+            name: 'Blueberry Ale',
+            style: 'Fruited Ale',
             ABV: 5,
+            recipe: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac leo non tellus facilisis semper. Donec vitae pretium turpis. Ut at sem sed ex vestibulum luctus. In sodales posuere orci. Donec scelerisque volutpat leo, et venenatis dui pellentesque vel. Aliquam nibh arcu, lacinia sit amet convallis quis, interdum eget massa.",
+            review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac leo non tellus facilisis semper. Donec vitae pretium turpis. Ut at sem sed ex vestibulum luctus. In sodales posuere orci. Donec scelerisque volutpat leo, et venenatis dui pellentesque vel. Aliquam nibh arcu, lacinia sit amet convallis quis, interdum eget massa."
         })
         await recipes.save();
     }
