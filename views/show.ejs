@@ -34,25 +34,14 @@
 	</div>
 </div>
 
-<div class="row">
-	<div class="col-6 offset-3">
-		<div class="card mb-3">
-		  <div class="card-body">
-		    <h5 class="card-title"><%= recipes.name %></h5>
-		    <p class="card-text"><%= recipes.recipe %></p>
-		  </div>
-		  <ul class="list-group list-group-flush">
-		    <li class="list-group-item text-muted"><%= recipes.style %></li>
-		    <li class="list-group-item">ABV: <%= recipes.ABV %>%</li>
-		  </ul>
-		  <div class="card-body">
-		    <a href="/recipes/<%= recipes._id %>/edit" class="card-link btn btn-info">Edit</a>
-		    <form class="d-inline" action="/recipes/<%= recipes._id %>?_method=DELETE" method='POST'>
-				<button class="card-link btn btn-warning">Delete</button>
-			</form>
-		  </div>
-		</div>
-	</div>
+<div class="buttons">
+	<a href="/recipes/<%= recipes._id %>/edit" class="card-link btn btn-warning edit">Edit <%= recipes.name %></a>
+	<form class="d-inline" action="/recipes/<%= recipes._id %>?_method=DELETE" method='POST'>
+		<button class="card-link btn btn-danger">Delete <%= recipes.name %></button>
+	</form>
 </div>
+
+<a href="/recipes" id="back-home" class="btn btn-dark">Back to Recipes</a>
+
 </body>
 </html>

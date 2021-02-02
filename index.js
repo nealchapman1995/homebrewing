@@ -42,6 +42,10 @@ app.get('/new', (req, res) => {
 	res.render('new')
 })
 
+app.get('/calculations', (req, res) => {
+	res.render('calculations')
+})
+
 app.post('/new', async(req, res) => {
 	const recipe = new Recipe(req.body.recipe);
 	await recipe.save();
