@@ -8,11 +8,13 @@ const mongoose = require('mongoose');
 const Recipe = require('./models/recipes');
 
 
-mongoose.connect('mongodb://localhost:27017/homebrewing', {
+mongoose.connect('mongodb+srv://First-User:juneau2denver@cluster0.nkkwh.mongodb.net/recipes?retryWrites=true&w=majority', {
 	useNewUrlParser: true,
 	useCreateIndex:true,
 	useUnifiedTopology:true
 });
+
+
 
 mongoose.connection.on('error', console.log.bind(console, 'connection error:'));
 mongoose.connection.once('open', () => {

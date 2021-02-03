@@ -9,6 +9,7 @@ html,body
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
+    text-align: center;
 }
 
 html{
@@ -33,4 +34,12 @@ html{
 .active{
 	background-color: #e6e6e6 !important;
 	border: none !important;
+}
+
+#original-grv{
+	display: inline-block;
+}
+
+span{
+	display: inline-block;
 }
