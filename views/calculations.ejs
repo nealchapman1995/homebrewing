@@ -22,7 +22,7 @@
 <div class="row">
 	<div class="col-6">
 		<h2>Calculate ABV!</h2>
-			<div class="input-group">
+			<div class="input-group" id="gravity">
 	  			<span class="input-group-text" id="basic-addon1">Original Gravity</span>
 	  			<input type="text" class="form-control" placeholder="Original Gravity" aria-label="Username" aria-describedby="basic-addon1" id="original-grav">
 	  			<span class="input-group-text" id="basic-addon1">Final Gravity</span>
@@ -33,20 +33,22 @@
 	</div>
 	<div class="col-6">
 		<h2>See how much botteling sugar is needed!</h2>
-		<select class="form-select" aria-label="Default select example" id="co2">
-  			<option selected>Style of Beer (Dissolved CO2)</option>
-  			<option value="1.75">British Ales (1.5 - 2.0)</option>
-  			<option value="2.2">Belgian Ales (1.9 - 2.4)</option>
-  			<option value="2.5">American Ales and Lagers (2.2 - 2.7)</option>
-  			<option value="3.75">Fruit Lambics (3.0 - 4.5</option>
-  			<option value="2"> Porters and Stouts (1.7 - 2.3)</option>
-  			<option value="2.5"> European Lagers (2.2 - 2.7)</option>
-  			<option value="4"> German Wheat Beers (3.7 - 4.3)</option>
-		</select>
-  		<span class="input-group-text" id="basic-addon1">Quantity (Gallons)</span>
-  		<input type="text" class="form-control" placeholder="quantity" aria-label="Username" aria-describedby="basic-addon1" id="qty">
-  		<span class="input-group-text" id="basic-addon1">Temprature (Degrees F)</span>
-  		<input type="text" class="form-control" placeholder="Temprature" aria-label="Username" aria-describedby="basic-addon1" id="temp">
+			<select class="form-select" aria-label="Default select example" id="co2">
+	  			<option selected>Style of Beer (Dissolved CO2)</option>
+	  			<option value="1.75">British Ales (1.5 - 2.0)</option>
+	  			<option value="2.2">Belgian Ales (1.9 - 2.4)</option>
+	  			<option value="2.5">American Ales and Lagers (2.2 - 2.7)</option>
+	  			<option value="3.75">Fruit Lambics (3.0 - 4.5</option>
+	  			<option value="2"> Porters and Stouts (1.7 - 2.3)</option>
+	  			<option value="2.5"> European Lagers (2.2 - 2.7)</option>
+	  			<option value="4"> German Wheat Beers (3.7 - 4.3)</option>
+			</select>
+		<div class="input-group" id="sugar-calc">
+	  		<span class="input-group-text" id="basic-addon1">Quantity (Gallons)</span>
+	  		<input type="text" class="form-control" placeholder="quantity" aria-label="Username" aria-describedby="basic-addon1" id="qty">
+	  		<span class="input-group-text" id="basic-addon1">Temprature (Degrees F)</span>
+	  		<input type="text" class="form-control" placeholder="Temprature" aria-label="Username" aria-describedby="basic-addon1" id="temp">
+	  	</div>
   		<p class="btn btn-info" id="calculate-sugar">Calculate!<p>
   		<h5><span id="sugar"></span> <span id="cups"></span></h5>
 	</div>

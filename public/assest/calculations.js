@@ -22,8 +22,12 @@ function sugarCalculate(){
 	let qty = document.getElementById('qty').value
 	let sugarNeeded = ((15.195 * qty) * (((co - 3.0378) + (0.050062 * temp)) - (0.00026555 * (temp * temp))));
 	
-	sugar.innerHTML = ("You need " + sugarNeeded.toFixed(1) + " grams of corn sugar");
-	cups.innerHTML = ("or " + (sugarNeeded * .0050223).toFixed(2) + " cups");
+	if (temp === NaN || qty === NaN){
+		sugar.innerHTML = ("Please input numbers")
+	}
+	else{
+		sugar.innerHTML = ("You need " + sugarNeeded.toFixed(1) + " grams of corn sugar");
+		cups.innerHTML = ("or " + (sugarNeeded * .0050223).toFixed(2) + " cups");
+	}
 }
-
 document.getElementById('calculate-sugar').addEventListener("click", sugarCalculate);

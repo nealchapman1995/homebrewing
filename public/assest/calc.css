@@ -36,10 +36,48 @@ html{
 	border: none !important;
 }
 
-#original-grv{
-	display: inline-block;
+#gravity{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 }
 
-span{
-	display: inline-block;
+#gravity span{
+	width: 300px;
+	margin-top: 30px;
+}
+
+#gravity input{
+	width: 300px;
+}
+
+#final-grav{
+	margin-bottom: 20px;
+}
+
+#sugar-calc{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#sugar-calc span{
+	width: 300px;
+	margin-top: 30px;
+}
+
+#sugar-calc input{
+	width: 300px;
+}
+
+#temp{
+	margin-bottom: 10px;
+}
+
+#co2{
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
 }
