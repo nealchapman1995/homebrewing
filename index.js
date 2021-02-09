@@ -35,7 +35,7 @@ app.get('/', (req, res) => {
   res.render('home');
 })
 
-app.get('/recipes', async(req, res) => {
+app.get('/recipes', async(req, res, next) => {
 	const recipes = await Recipe.find({});
 	res.render('recipes', {recipes})
 })
@@ -54,7 +54,7 @@ app.post('/new', async(req, res) => {
 	res.redirect(`/recipes/${recipe._id}`);
 })
 
-app.get('/recipes/:id', async (req, res) => {
+app.get('/recipes/:id', async (req, res, next) => {
 	const recipes = await Recipe.findById(req.params.id);
 	res.render('show', { recipes })
 })
@@ -74,6 +74,11 @@ app.delete('/recipes/:id', async (req, res) => {
 	const { id } = req.params;
 	await Recipe.findByIdAndDelete(id);
 	res.redirect('/recipes');
+})
+
+app.use(function (err, req, res, next) {
+  console.error(err.stack)
+  res.status(500).send('Something broke!')
 })
 
 app.listen(process.env.PORT || 3000, () => {
