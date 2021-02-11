@@ -122,14 +122,20 @@ html{
 	color: grey;
 }
 
+#row{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
 #recipe-recipe{
 	text-align: center;
-	margin: 50px 100px;
+	margin: 50px 200px;
 }
 
 #recipe-review{
 	text-align: center;
-	margin: 50px 100px;
+	margin: 50px 200px;
 }
 
 .edit{
