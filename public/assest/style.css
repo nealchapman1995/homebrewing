@@ -44,11 +44,12 @@ html{
 	margin-bottom: 50px;
 	margin-right: 50px;
 	margin-left: 50px;
-	background-color: #5B9DC2;
+	background-color: #88B7D3;
 	color: #e3e3e3;
 	height: 300px;
 	padding-top: 50px;
 	font-family: 'Roboto Slab', serif;
+	border-radius: 5px;
 }
 
 #header h1{
@@ -66,14 +67,14 @@ html{
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin-left: 75px;
-	margin-right: 75px;
+	margin-left: 100px;
+	margin-right: 100px;
 	background-color: #b0b0b0
 	margin-bottom: 100px;
 }
 
 .card{
-	width: 400px;
+	width: 300px;
 	display: flex;
 	text-align: center;
 	margin: 60px 10px;
@@ -103,7 +104,7 @@ html{
 }
 
 #new{
-	color: white;
+	color: #FEFDEC !important;
 	margin-top: 50px;
 	margin-bottom: 100px;
 	width: 15%;
@@ -189,4 +190,10 @@ html{
 	color: #dbdbdb !important;
 }
 
+.edit-form input{
+	border: none;
+}
+'.edit-form input{
+	border: none;
+}
 

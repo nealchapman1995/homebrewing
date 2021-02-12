@@ -22,6 +22,7 @@ html{
 	width: 300px;
 	text-align: center;
 	color: #363636 !important;
+	border-radius: 10px;
 }
 
 .nav{
@@ -40,6 +41,7 @@ html{
 h2{
 	margin-top: 50px;
 	margin-bottom: 25px;
+	color: #283B53;
 }
 
 #gravity{
@@ -47,19 +49,33 @@ h2{
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+	color:  #FEFDEC;
 }
 
 #gravity span{
 	width: 300px;
 	margin-top: 30px;
+	border: none;
+	background-color: #88B7D3;
+	color:  #FEFDEC;
 }
 
 #gravity input{
 	width: 300px;
+	color:  black;
+}
+
+input:focus{
+	box-shadow: none !important;
+}
+
+#original-grav{
+	border: none;
 }
 
 #final-grav{
 	margin-bottom: 20px;
+	border: none;
 }
 
 #sugar-calc{
@@ -72,10 +88,14 @@ h2{
 #sugar-calc span{
 	width: 300px;
 	margin-top: 30px;
+	background-color: #88B7D3;
+	color:  #FEFDEC;
+	border: none;
 }
 
 #sugar-calc input{
 	width: 300px;
+	border: none;
 }
 
 #temp{
@@ -86,4 +106,5 @@ h2{
 	width: 300px;
 	margin-left: auto;
 	margin-right: auto;
+	border: none;
 }

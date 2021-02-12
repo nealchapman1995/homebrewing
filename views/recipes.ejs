@@ -29,8 +29,8 @@
 		<div class="card mb-3">
 			<div class="row" id="card">
 				<div id="body">
-					<h5 class="card-title">Recipe: <%= recipe.name %></h5>
-					<p class="card-text">Style of Beer: <%= recipe.style%>		<span><small class="text-muted">		ABV: <%= recipe.ABV %>%</small></span></p>
+					<h5 class="card-title"><%= recipe.name %></h5>
+					<p class="card-text"><%= recipe.style%>		<span><small class="text-muted">		ABV: <%= recipe.ABV %>%</small></span></p>
 					<a href="/recipes/<%= recipe._id %>" class="btn btn-primary">See Recipe</a>
 				</div>
 			</div>
