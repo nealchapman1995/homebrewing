@@ -58,6 +58,7 @@ h2{
 	border: none;
 	background-color: #88B7D3;
 	color:  #FEFDEC;
+	border-radius: 0 !important;
 }
 
 #gravity input{
@@ -91,6 +92,7 @@ input:focus{
 	background-color: #88B7D3;
 	color:  #FEFDEC;
 	border: none;
+	border-radius: 0 !important;
 }
 
 #sugar-calc input{
