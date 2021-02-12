@@ -112,19 +112,27 @@ html{
 
 #show-header{
 	text-align: center;
-	background-color: #262626;
-	color: #dbdbdb;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	margin-right: 50px;
+	margin-left: 50px;
+	background-color: #88B7D3;
+	color: #0d3b66;
+	height: 200px;
+	padding-top: 50px;
+	font-family: 'Roboto Slab', serif;
+	border-radius: 5px;
 }
 
 #show-header h2{
 	font-size: 50px;
-	color: white;
-	padding-top: 20px;
+	color: #e3e3e3;
+	padding-top: 0px;
 }
 
 #show-header h5{
 	font-size: 30px;
-	color: white;
+	color: #e3e3e3;
 	padding-bottom: 40px;
 	padding-top: 20px;
 }

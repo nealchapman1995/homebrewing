@@ -41,8 +41,9 @@ html{
 #beer-glasses{
 	height: 550px;
 	width: 400px;
-	margin-left: 350px;
+	margin-left: 300px;
 	margin-top: 60px;
+	border-radius: 2px;
 }
 
 #beer{
@@ -51,6 +52,7 @@ html{
 
 #title{
 	margin-top: 200px;
+	margin-left: 100px;
 }
 
 #title h1{
@@ -65,8 +67,12 @@ html{
 .btn-info{
 	background-color: transparent;
 	margin-top: 30px;
+	margin-left: 50px;
+	width: 150px;
+	color: #0d3b66;
+	border-radius: 20px;
 }
 
 i{
-	margin-left: 5px;
+	margin-left: 10px;
 }
