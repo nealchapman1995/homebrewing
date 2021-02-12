@@ -94,7 +94,7 @@ html{
 
 .btn-primary{
 	background-color: #5B9DC2;
-	border: 1px solid #283B53;
+	border: 1px solid #5B9DC2;
 	color: #FEFDEC !important;
 }
 
@@ -163,33 +163,37 @@ html{
 	color: white;
 	border: 1px solid #2c2b70;
 	margin-right: 75px;
-	color: #dbdbdb;
+	color: #e3e3e3;
 }
 
 .edit:hover{
 	background-color: #1c1b47;
 	border: 1px solid #1c1b47;
-	color: #dbdbdb;
+	color: #e3e3e3;
 }
 
 .btn-danger{
-	color: #dbdbdb !important;
+	color: #e3e3e3;
 }
 
 .buttons{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	color: #dbdbdb
+	color: #e3e3e3;
 }
 
 #back-home{
 	display: block;
-	width: 15%;
+	width: 12%;
 	margin-top: 30px;
-	margin-left: auto
+	margin-left: auto;
 	margin-right: auto;
-	color: #dbdbdb;
+	color: #e3e3e3;
+}
+
+#back-home:hover{
+	background-color: black !important;
 }
 
 #make-new-recipe{

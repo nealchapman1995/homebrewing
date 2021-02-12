@@ -22,7 +22,7 @@ function sugarCalculate(){
 	let qty = document.getElementById('qty').value
 	let sugarNeeded = ((15.195 * qty) * (((co - 3.0378) + (0.050062 * temp)) - (0.00026555 * (temp * temp))));
 	
-	if (temp === NaN || qty === NaN){
+	if (temp == NaN || qty == NaN){
 		sugar.innerHTML = ("Please input numbers")
 	}
 	else{

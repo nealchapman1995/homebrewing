@@ -114,3 +114,9 @@ input:focus{
 .btn-info{
 	color: #FEFDEC;	
 }
+
+.btn-info:hover{
+	color: #FEFDEC;
+	background-color: #283B53;
+	border: 1px solid #283B53;	
+}
