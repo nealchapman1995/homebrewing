@@ -1,5 +1,5 @@
 body{
-	background-color: #cfcfcf;
+	background-color: #FEFDEC;
 	font-family: 'IBM Plex Sans', sans-serif;
 }
 
@@ -25,15 +25,16 @@ html{
 }
 
 .nav{
-	background-color: #cfcfcf !important;
+	background-color: #FEFDEC !important;
 	color: #363636 !important;
 	border: none !important;
 	position: sticky;
 }
 
 .active{
-	background-color: #e6e6e6 !important;
+	background-color: #FDEAC4 !important;
 	border: none !important;
+	border-radius: 10px;
 }
 
 h2{

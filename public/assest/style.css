@@ -1,6 +1,7 @@
 body{
-	background-color: #cfcfcf;
+	background-color: #FEFDEC;
 	font-family: 'IBM Plex Sans', sans-serif;
+	color: #0d3b66;
 }
 
 html,body
@@ -21,25 +22,29 @@ html{
 	width: 300px;
 	text-align: center;
 	color: #363636 !important;
+	border-radius: 10px;
 }
 
 .nav{
-	background-color: #cfcfcf !important;
+	background-color:  #FEFDEC !important;
 	color: #363636 !important;
 	border: none !important;
 	position: sticky;
 }
 
 .active{
-	background-color: #e6e6e6 !important;
+	background-color: #FDEAC4 !important;
 	border: none !important;
+	border-radius: 10px;
 }
 
 #header{
 	text-align: center;
 	margin-top: 0px;
 	margin-bottom: 50px;
-	background-color: #4a4a4a;
+	margin-right: 50px;
+	margin-left: 50px;
+	background-color: #5B9DC2;
 	color: #e3e3e3;
 	height: 300px;
 	padding-top: 50px;
@@ -48,6 +53,7 @@ html{
 
 #header h1{
 	font-size: 70px !important;
+	color: #FEFDEC;
 }
 
 #header h4{
@@ -72,8 +78,13 @@ html{
 	text-align: center;
 	margin: 60px 10px;
 	border-radius: 10px;
-	background-color: #b0b0b0;
-	border: none;
+	background-color: #FEFDEC;
+	border: 3px solid #BACADE;
+	color: #283B53;
+}
+
+.card-title{
+	color: #B17806;
 }
 
 #body{
@@ -81,14 +92,14 @@ html{
 }
 
 .btn-primary{
-	background-color: #8e89cc;
-	border: 1px solid #8e89cc;
-	color: #dbdbdb !important;
+	background-color: #5B9DC2;
+	border: 1px solid #283B53;
+	color: #FEFDEC !important;
 }
 
 .btn-primary:hover{
-	background-color: #605c8a;
-	border: 1px solid #605c8a;
+	background-color: #283B53;
+	border: 1px solid #283B53;
 }
 
 #new{
