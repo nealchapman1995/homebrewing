@@ -110,3 +110,7 @@ input:focus{
 	margin-right: auto;
 	border: none;
 }
+
+.btn-info{
+	color: #FEFDEC;	
+}

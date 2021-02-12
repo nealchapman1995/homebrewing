@@ -1,59 +1,72 @@
 body{
-	background-color: #cfcfcf;
+	background-color: #FEFDEC;
+	font-family: 'IBM Plex Sans', sans-serif;
+	color: #0d3b66;
+}
+
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+html{
+	margin: 0;
+	padding: 0;
+	height: 100%;
 }
 
 .nav-link{
 	width: 300px;
 	text-align: center;
 	color: #363636 !important;
+	border-radius: 10px;
 }
 
 .nav{
-	background-color: #cfcfcf !important;
+	background-color:  #FEFDEC !important;
 	color: #363636 !important;
 	border: none !important;
 	position: sticky;
 }
 
 .active{
-	background-color: #e6e6e6 !important;
+	background-color: #FDEAC4 !important;
 	border: none !important;
+	border-radius: 10px;
 }
 
-#main{
-	background-image: url(beer-background.jpg);
-	height: 750px;
-	width: 100%;
-	background-position: center;
-	text-align: center;
-	color: #dbdbdb;
+#beer-glasses{
+	height: 550px;
+	width: 400px;
+	margin-left: 350px;
+	margin-top: 60px;
 }
 
-#main h1{
-	position: relative;
-	top: 150px;
+#beer{
+
+}
+
+#title{
+	margin-top: 200px;
+}
+
+#title h1{
+	font-family: 'Roboto Slab', serif;
 	font-size: 50px;
 }
 
-#main h2{
-	position: relative;
-	top: 510px;
-	font-size: 45px;
-}
-
-#about-us{
-	text-align: center;
-}
-
-#about-us h3{
-	margin-top: 100px;
-	font-size: 35px;
-}
-
-#about-us p{
-	margin-top: 50px;
-	margin-left: 300px;
-	margin-right: 300px;
-	margin-bottom: 100px;
+#title h5{
 	font-size: 20px;
+}
+
+.btn-info{
+	background-color: transparent;
+	margin-top: 30px;
+}
+
+i{
+	margin-left: 5px;
 }

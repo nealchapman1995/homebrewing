@@ -3,6 +3,8 @@
 <head>
 	<title>Homebrewing Central</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Roboto+Condensed&family=Roboto+Slab&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/185f907fc6.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="/assest/home.css">
 </head>
 <body>
@@ -18,13 +20,17 @@
   </li>
 </ul>
 
-<div id="main">
-	<h1>Homebrewing Central</h1>
-	<h2>The Home for Homebrewers</h2>
-</div>
-<div id="about-us">
-	<h3>Welcome to Homebrewing Central!</h3>
-	<p>This site is the one stop shop for all of your homebrewing needs. There are calculators for ABV based on original and final gravities, and for determining how much botteling sugar would be need for specific styles of beer. We also have a registery of previously used recipes with tasting notes. Please look through and explore out tools!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-3" id="title">
+      <h1>Homebrewing Central</h1>
+      <h5>Explore our list of Homebrewing recipes, and add on your own. Plus there are built-in calculators to take all of the thinking out of your brewing.</h5>
+      <a class="btn btn-info" href="/recipes">Explore<i class="fas fa-beer"></i></a>
+    </div>
+    <div class="col-6" id="beer">
+      <img src="/assest/beer-glasses.jpg" alt="Beer Glasses" id="beer-glasses">
+    </div>
+  </div>
 </div>
 
 

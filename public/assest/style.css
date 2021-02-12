@@ -179,7 +179,7 @@ html{
 	display: block;
 	width: 15%;
 	margin-top: 30px;
-	margin-left: auto;
+	margin-left: auto
 	margin-right: auto;
 	color: #dbdbdb;
 }
@@ -188,4 +188,28 @@ html{
 	display: flex;
 	justify-content: center;
 	color: #dbdbdb !important;
+}
+
+#form-edit input{
+	border: none !important;
+}
+
+#form-edit span{
+	border: none !important;
+}
+
+#form-edit textarea{
+	border: none !important;
+}
+
+#form-new input{
+	border: none !important;
+}
+
+#form-new span{
+	border: none !important;
+}
+
+#form-new textarea{
+	border: none !important;
 }
