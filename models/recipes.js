@@ -11,7 +11,7 @@ const receipeSchema = new Schema({
 	required: true},
 
 	ABV: 
-	{type: Number,
+	{type: String,
 	required: true},
 
 	recipe: 

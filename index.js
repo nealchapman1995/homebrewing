@@ -64,7 +64,7 @@ app.get('/recipes/:id/edit', async (req, res) => {
 	res.render('edit', { recipe })
 })
 
-app.put('/recipes/:id', async (req, res) => {
+app.put('/recipes/:id', async (req, res, next) => {
 	const {id} = req.params;
 	const recipe = await Recipe.findByIdAndUpdate(id, {...req.body.recipe});
 	res.redirect(`/recipes/${recipe._id}`);
@@ -76,9 +76,10 @@ app.delete('/recipes/:id', async (req, res) => {
 	res.redirect('/recipes');
 })
 
-app.use(function (err, req, res, next) {
-  console.error(err.stack)
-  res.status(500).send('Something broke!')
+app.use((err, req, res, next) => {
+    const { statusCode = 500 } = err;
+    if (!err.message) err.message = 'Oh No, Something Went Wrong!'
+    res.status(statusCode).render('error', { err })
 })
 
 app.listen(process.env.PORT || 3000, () => {
