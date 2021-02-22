@@ -48,10 +48,15 @@ app.get('/calculations', (req, res) => {
 	res.render('calculations')
 })
 
-app.post('/new', async(req, res) => {
+app.post('/new', async(req, res, next) => {
 	const recipe = new Recipe(req.body.recipe);
-	await recipe.save();
-	res.redirect(`/recipes/${recipe._id}`);
+	try{
+		await recipe.save();
+		res.redirect(`/recipes/${recipe._id}`);
+	}
+	catch(e){
+		res.render('error', { e });
+	}
 })
 
 app.get('/recipes/:id', async (req, res, next) => {
