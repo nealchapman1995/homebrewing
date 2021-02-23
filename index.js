@@ -36,8 +36,13 @@ app.get('/', (req, res) => {
 })
 
 app.get('/recipes', async(req, res, next) => {
-	const recipes = await Recipe.find({});
-	res.render('recipes', {recipes})
+	try{
+		const recipes = await Recipe.find({});
+		res.render('recipes', {recipes})
+	}
+	catch{
+		res.render("404error");
+	}
 })
 
 app.get('/new', (req, res) => {
@@ -60,19 +65,34 @@ app.post('/new', async(req, res, next) => {
 })
 
 app.get('/recipes/:id', async (req, res, next) => {
-	const recipes = await Recipe.findById(req.params.id);
-	res.render('show', { recipes })
+	try{
+		const recipes = await Recipe.findById(req.params.id);
+		res.render('show', { recipes })
+	}
+	catch(e){
+		res.render("404error");
+	}
 })
 
 app.get('/recipes/:id/edit', async (req, res) => {
-	const recipe = await Recipe.findById(req.params.id);
-	res.render('edit', { recipe })
+	try{
+		const recipe = await Recipe.findById(req.params.id);
+		res.render('edit', { recipe })
+	}
+	catch{
+		res.render("404error");
+	}
 })
 
 app.put('/recipes/:id', async (req, res, next) => {
 	const {id} = req.params;
-	const recipe = await Recipe.findByIdAndUpdate(id, {...req.body.recipe});
-	res.redirect(`/recipes/${recipe._id}`);
+	try{
+		const recipe = await Recipe.findByIdAndUpdate(id, {...req.body.recipe});
+		res.redirect(`/recipes/${recipe._id}`);
+	}
+	catch(e){
+		res.render('error', { e });
+	}
 })
 
 app.delete('/recipes/:id', async (req, res) => {
@@ -81,10 +101,8 @@ app.delete('/recipes/:id', async (req, res) => {
 	res.redirect('/recipes');
 })
 
-app.use((err, req, res, next) => {
-    const { statusCode = 500 } = err;
-    if (!err.message) err.message = 'Oh No, Something Went Wrong!'
-    res.status(statusCode).render('error', { err })
+app.use((req, res, next) => {
+	res.render("404error");
 })
 
 app.listen(process.env.PORT || 3000, () => {

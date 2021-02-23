@@ -1,0 +1,51 @@
+body{
+	background-color: #FEFDEC;
+	font-family: 'IBM Plex Sans', sans-serif;
+	color: #0d3b66;
+}
+
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+html{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+.nav-link{
+	width: 300px;
+	text-align: center;
+	color: #363636 !important;
+	border-radius: 10px;
+}
+
+.nav{
+	background-color:  #FEFDEC !important;
+	color: #363636 !important;
+	border: none !important;
+	position: sticky;
+}
+
+.active{
+	background-color: #FDEAC4 !important;
+	border: none !important;
+	border-radius: 10px;
+}
+
+.alert-danger{
+	width: 50%;
+	margin-top: 150px;
+	height: 200px;
+	text-align: center;
+}
+
+#row{
+	display: flex;
+	justify-content: center;
+}
