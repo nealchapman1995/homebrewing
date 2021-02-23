@@ -39,13 +39,19 @@ html{
 }
 
 .alert-danger{
-	width: 50%;
+	width: 40%;
 	margin-top: 150px;
 	height: 200px;
 	text-align: center;
 }
 
 #row{
+	display: flex;
+	justify-content: center;
+}
+
+.back{
+	margin-top: 50px;
 	display: flex;
 	justify-content: center;
 }
