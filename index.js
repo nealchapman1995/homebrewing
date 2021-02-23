@@ -6,9 +6,12 @@ const port = 80
 const path = require('path');
 const mongoose = require('mongoose');
 const Recipe = require('./models/recipes');
+require('dotenv').config()
+
+const uri = process.env.ATLAS_URI;
 
 
-mongoose.connect('mongodb+srv://First-User:juneau2denver@cluster0.nkkwh.mongodb.net/recipes?retryWrites=true&w=majority', {
+mongoose.connect(uri, {
 	useNewUrlParser: true,
 	useCreateIndex:true,
 	useUnifiedTopology:true
