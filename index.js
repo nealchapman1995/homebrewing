@@ -41,11 +41,12 @@ app.use(require('express-session')({
 }))
 
 const { ExpressOIDC } = require('@okta/oidc-middleware')
+
 const oidc = new ExpressOIDC({
   issuer: `${process.env.OKTA_ORG_URL}/oauth2/default`,
   client_id: process.env.OKTA_CLIENT_ID,
   client_secret: process.env.OKTA_CLIENT_SECRET,
-  redirect_uri: `${process.env.HOST_URL}/authorization-code/callback`,
+  loginRedirectUri: `${process.env.HOST_URL}/callback`,
   scope: 'openid profile'
 })
 
